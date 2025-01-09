@@ -11,6 +11,8 @@ spec:
         github:
           owner: sbulav
           repo: gitops-cert-level-3-examples
+        labels:
+          - preview-ready
         requeueAfterSeconds: 180
   template:
     metadata:
@@ -32,4 +34,3 @@ spec:
           prune: true
         syncOptions:
           - CreateNamespace=true
-
